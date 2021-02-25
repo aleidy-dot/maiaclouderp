@@ -1,0 +1,24 @@
+InvalidInputOptions [Error]: Schematic input does not validate against the Schema: {"name":"cliente","language":"ts","path":"apps\\facturacion\\src\\app","flat":false,"spec":true,"type":"rest","skipImport":false,"crud":true}
+Errors:
+
+  Data path ".path" should match format "path".
+    at MapSubscriber.project (C:\Desarrollo\maiaclouderp\node_modules\@angular-devkit\schematics\tools\schema-option-transform.js:32:27)
+    at MapSubscriber._next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\operators\map.js:49:35)
+    at MapSubscriber.Subscriber.next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\Subscriber.js:66:18)
+    at ThrowIfEmptySubscriber._next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\operators\throwIfEmpty.js:44:26)
+    at ThrowIfEmptySubscriber.Subscriber.next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\Subscriber.js:66:18)
+    at TakeSubscriber._next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\operators\take.js:54:30)
+    at TakeSubscriber.Subscriber.next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\Subscriber.js:66:18)
+    at MergeMapSubscriber.notifyNext (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\operators\mergeMap.js:93:26)
+    at SimpleInnerSubscriber._next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\innerSubscribe.js:27:21)
+    at SimpleInnerSubscriber.Subscriber.next (C:\Desarrollo\maiaclouderp\node_modules\rxjs\internal\Subscriber.js:66:18) {
+  errors: [
+    {
+      keyword: 'format',
+      dataPath: '.path',
+      schemaPath: '#/properties/path/format',
+      params: [Object],
+      message: 'should match format "path"'
+    }
+  ]
+}
