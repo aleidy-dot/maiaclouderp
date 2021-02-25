@@ -2,13 +2,12 @@ import { Module } from '@nestjs/common';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ClienteModule } from './cliente/cliente.module';
 import { FacturaModule } from './factura/factura.module';
 import { ProductoModule } from './producto/producto.module';
 import { LineafacturaModule } from './lineafactura/lineafactura.module';
-
+import { CoreModule } from '@maiaclouderp/core';
 @Module({
-  imports: [ClienteModule, FacturaModule, ProductoModule, LineafacturaModule],
+  imports: [FacturaModule, ProductoModule, LineafacturaModule,CoreModule],
   controllers: [AppController],
   providers: [AppService],
 })
